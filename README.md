@@ -26,6 +26,7 @@
 ## Детали
 - В файл `secret_keys.txt` вносим секретные ключи в формате `Название:секретный ключ`. Название должно быть только на английском языке.
 - Для работы программы должно быть правильно настроенное время на компьютере.
+- Одноразовый код сразу же копируется в буфер обмена.
 
 ## Контакт
 ### TG - https://t.me/dmtrcrypto [![Join our Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/dmtrcrypto)
