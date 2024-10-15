@@ -1,5 +1,6 @@
 import pyotp
 import time
+import pyperclip
 
 file_path = 'secret_keys.txt'
 
@@ -14,6 +15,9 @@ def read_keys_from_file(file_path):
                 
                 if lower_account_name in account_names:
                     print(f"Ошибка: дублирующееся название '{account_name}'. Пожалуйста, измените его в файле.")
+                    return None
+                if lower_account_name == "exit":
+                    print(f"Ошибка: недопустимое название '{account_name}'. Пожалуйста, измените его в файле.")
                     return None
                 
                 keys[lower_account_name] = secret_key
@@ -39,6 +43,8 @@ while True:
         otp_code = totp.now()
 
         remaining_time = 30 - (int(time.time()) % 30)
+
+        pyperclip.copy(otp_code)
 
         print(f"Код для '{account_name}': {otp_code} (действителен еще {remaining_time} секунд)\n")
     else:
