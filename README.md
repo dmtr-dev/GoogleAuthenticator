@@ -14,7 +14,7 @@
 3. **Загружаем программу:**
  
     ```
-    git clone https://github.com/dmtr-dev/Auto-clicker-bot-for-Blum
+    git clone https://github.com/dmtr-dev/GoogleAuthenticator
     ```
 4. **Устанавливаем библиотеки:**
 
