@@ -19,7 +19,7 @@
 4. **Устанавливаем библиотеки:**
 
     ```
-    pip install pyperclip pyotp
+    pip install pyperclip pyotp ctypes termcolor
     ```
 5.  **Запускаем файл `main.py`**
 
