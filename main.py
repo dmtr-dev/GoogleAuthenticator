@@ -1,6 +1,8 @@
 import pyotp
 import time
 import pyperclip
+from ctypes import windll
+from termcolor import cprint
 
 file_path = 'secret_keys.txt'
 
@@ -49,3 +51,7 @@ while True:
         print(f"Код для '{account_name}': {otp_code} (действителен еще {remaining_time} секунд)\n")
     else:
         print("Такого аккаунта нет. Попробуйте снова.\n")
+
+if __name__ == "__main__":
+    windll.kernel32.SetConsoleTitleW('Finder Wallets EVM | by https://t.me/dmtrcrypto')
+    cprint("\nTG Channel - https://t.me/dmtrcrypto\n\n", 'magenta')
