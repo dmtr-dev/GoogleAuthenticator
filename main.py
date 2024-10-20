@@ -53,5 +53,5 @@ while True:
         print("Такого аккаунта нет. Попробуйте снова.\n")
 
 if __name__ == "__main__":
-    windll.kernel32.SetConsoleTitleW('Finder Wallets EVM | by https://t.me/dmtrcrypto')
+    windll.kernel32.SetConsoleTitleW('Google Authenticator | by https://t.me/dmtrcrypto')
     cprint("\nTG Channel - https://t.me/dmtrcrypto\n\n", 'magenta')
